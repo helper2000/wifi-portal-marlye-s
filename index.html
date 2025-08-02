@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Menu - Marley's Premium Lounge</title>
+  <meta charset="UTF-8" />
+  <title>Marley's Premium Lounge Menu</title>
   <style>
     body {
       background-color: #111;
       color: #fff;
+      font-family: 'Segoe UI', sans-serif;
       text-align: center;
-      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
     }
-    .container {
-      margin-top: 50px;
+    h1 {
+      margin-top: 40px;
+      color: #f1c40f;
     }
-    a.button {
-      padding: 15px 30px;
+    .menu-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+      gap: 20px;
+      padding: 0 20px 40px;
+    }
+    .menu-card {
+      background-color: #222;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 16px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .menu-card:hover {
+      transform: translateY(-5px);
+    }
+    .menu-card h2 {
+      color: #27ae60;
+      margin-bottom: 10px;
+    }
+    .menu-card a {
+      display: inline-block;
+      margin-top: 10px;
       background-color: #27ae60;
       color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
       text-decoration: none;
-      font-size: 18px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #27ae60;
-    }
-    iframe {
-      margin-top: 30px;
-      width: 90%;
-      height: 600px;
-      border: none;
+      box-shadow: 0 0 8px #27ae60;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>📋 Marley's Premium Lounge Menu</h1>
-    <a href="mdrinks.pdf" class="button" target="_blank">Open Menu</a>
 
-    <iframe src="mdrinks.pdf"></iframe>
+  <h1>📋 Marley's Premium Lounge - Full Menu</h1>
+
+  <div class="menu-section">
+
+    <div class="menu-card">
+      <h2>Drinks</h2>
+      <a href="mdrinks.pdf" target="_blank">View Menu</a>
+    </div>
+
+    <div class="menu-card">
+      <h2>Food</h2>
+      <a href="mfood.pdf" target="_blank">View Menu</a>
+    </div>
+
+    <div class="menu-card">
+      <h2>Sushi</h2>
+      <a href="msushi.pdf" target="_blank">View Menu</a>
+    </div>
+
+    <div class="menu-card">
+      <h2>Desserts</h2>
+      <a href="mdessert.pdf" target="_blank">View Menu</a>
+    </div>
+
+    <div class="menu-card">
+      <h2>Breakfast</h2>
+      <a href="mbreakfast.pdf" target="_blank">View Menu</a>
+    </div>
+
+    <!-- أضف المزيد من الأقسام حسب الحاجة -->
+
   </div>
+
 </body>
 </html>
-
-
-
-
-
