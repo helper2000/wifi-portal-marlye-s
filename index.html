@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Menu - Marley's Premium Lounge</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marley's Premium Lounge Menu</title>
   <style>
     body {
       margin: 0;
@@ -11,119 +11,96 @@
       color: #fff;
       font-family: 'Segoe UI', sans-serif;
     }
-
     header {
       text-align: center;
-      padding: 40px 20px 20px;
-      background-color: #0f1f0f;
+      padding: 20px;
+      background-color: #1a2e1a;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
-
     header img {
-      width: 100px;
-      margin-bottom: 15px;
+      max-height: 100px;
     }
-
-    header h1 {
-      color: #d4af37;
-      font-size: 32px;
-      margin-bottom: 10px;
+    h1 {
+      margin: 10px 0 0 0;
+      color: gold;
     }
-
-    .section {
-      padding: 30px 20px;
+    section {
+      padding: 20px;
       text-align: center;
     }
-
-    .section h2 {
-      color: #d4af37;
-      font-size: 26px;
-      margin-bottom: 20px;
-      border-bottom: 1px solid #d4af37;
+    section h2 {
+      color: #ffd700;
+      margin-bottom: 15px;
+    }
+    .menu-button {
       display: inline-block;
-      padding-bottom: 10px;
+      margin: 10px;
+      padding: 15px 25px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      box-shadow: 0 0 10px #27ae60;
+      transition: background-color 0.3s;
     }
-
-    iframe {
-      width: 90%;
-      height: 600px;
-      border: 2px solid #d4af37;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
-      margin-top: 15px;
+    .menu-button:hover {
+      background-color: #219150;
     }
-
     .whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
       background-color: #25d366;
       color: white;
-      padding: 12px 20px;
+      padding: 15px 20px;
       border-radius: 50px;
-      font-size: 16px;
+      font-size: 18px;
       text-decoration: none;
+      box-shadow: 0 0 15px #25d366;
       display: flex;
       align-items: center;
-      box-shadow: 0 0 10px #25d366;
-      z-index: 1000;
+      gap: 10px;
     }
-
     .whatsapp img {
-      width: 24px;
       height: 24px;
-      margin-right: 10px;
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 450px;
-      }
-
-      header h1 {
-        font-size: 24px;
-      }
-
-      .section h2 {
-        font-size: 20px;
-      }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Marley's Logo">
-    <h1>📋 Marley's Premium Lounge Menu</h1>
+    <img src="logo.png" alt="Marley's Premium Lounge Logo">
+    <h1>Marley's Premium Lounge</h1>
   </header>
 
-  <div class="section">
-    <h2>📘 All Menu</h2>
-    <iframe src="mdrinks.pdf"></iframe>
-  </div>
+  <section>
+    <h2>📋 All Menu</h2>
+    <a href="mdrinks.pdf" class="menu-button" target="_blank">View All Menu</a>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>🥤 Drinks</h2>
-    <iframe src="mdrinks.pdf"></iframe>
-  </div>
+    <a href="mdrinks.pdf" class="menu-button" target="_blank">View Drinks</a>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>🍰 Desserts</h2>
-    <iframe src="mdrinks.pdf"></iframe>
-  </div>
+    <a href="mdessert.pdf" class="menu-button" target="_blank">View Desserts</a>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>🍽️ Food</h2>
-    <iframe src="mdrinks.pdf"></iframe>
-  </div>
+    <a href="mfood.pdf" class="menu-button" target="_blank">View Food</a>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>🍕 Pizza</h2>
-    <iframe src="mdrinks.pdf"></iframe>
-  </div>
+    <a href="mpizza.pdf" class="menu-button" target="_blank">View Pizza</a>
+  </section>
 
   <a class="whatsapp" href="https://wa.me/201234567890" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    Order Now
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"> Order on WhatsApp
   </a>
 </body>
 </html>
-
