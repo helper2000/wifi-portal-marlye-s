@@ -1,134 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marley's Lounge Menu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Menu - Marley's Premium Lounge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background-color: #0d0d0d;
+      background-color: #0f1f0f;
       color: #fff;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     header {
-      background-color: #1a1a1a;
-      padding: 25px 15px;
       text-align: center;
-      color: #f1c40f;
-      font-size: 22px;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+      padding: 40px 20px 20px;
+      background-color: #0f1f0f;
     }
 
-    .menu-container {
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 600px;
-      margin: auto;
+    header img {
+      width: 100px;
+      margin-bottom: 15px;
     }
 
-    .menu-card {
-      background-color: #1e1e1e;
-      border-left: 4px solid #27ae60;
-      padding: 18px 20px;
-      border-radius: 14px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-      transition: transform 0.3s;
+    header h1 {
+      color: #d4af37;
+      font-size: 32px;
+      margin-bottom: 10px;
     }
 
-    .menu-card:hover {
-      transform: scale(1.02);
+    .section {
+      padding: 30px 20px;
+      text-align: center;
     }
 
-    .menu-title {
-      font-size: 20px;
-      color: #27ae60;
-      margin-bottom: 8px;
-    }
-
-    .menu-button {
+    .section h2 {
+      color: #d4af37;
+      font-size: 26px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #d4af37;
       display: inline-block;
-      margin-top: 5px;
-      background-color: #27ae60;
-      color: #fff;
-      padding: 10px 22px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 16px;
-      box-shadow: 0 0 10px #27ae60;
+      padding-bottom: 10px;
     }
 
-    .whatsapp-button {
+    iframe {
+      width: 90%;
+      height: 600px;
+      border: 2px solid #d4af37;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+      margin-top: 15px;
+    }
+
+    .whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #25D366;
+      background-color: #25d366;
       color: white;
-      padding: 14px 18px;
+      padding: 12px 20px;
       border-radius: 50px;
+      font-size: 16px;
       text-decoration: none;
-      font-size: 18px;
-      box-shadow: 0 0 15px #25D366;
-      z-index: 999;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 10px #25d366;
+      z-index: 1000;
     }
 
-    .whatsapp-button:hover {
-      background-color: #1ebe5d;
+    .whatsapp img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
     }
 
-    @media (max-width: 480px) {
-      .menu-title {
-        font-size: 18px;
+    @media (max-width: 768px) {
+      iframe {
+        height: 450px;
       }
-      .menu-button {
-        font-size: 14px;
-        padding: 9px 20px;
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      .section h2 {
+        font-size: 20px;
       }
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="Marley's Logo">
+    <h1>📋 Marley's Premium Lounge Menu</h1>
+  </header>
 
-  <header>📋 Marley's Premium Lounge – Full Menu</header>
-
-  <div class="menu-container">
-
-    <div class="menu-card">
-      <div class="menu-title">🥤 Drinks Menu</div>
-      <a href="mdrinks.pdf" target="_blank" class="menu-button">View PDF</a>
-    </div>
-
-    <div class="menu-card">
-      <div class="menu-title">🍽️ Food Menu</div>
-      <a href="mfood.pdf" target="_blank" class="menu-button">View PDF</a>
-    </div>
-
-    <div class="menu-card">
-      <div class="menu-title">🍣 Sushi Menu</div>
-      <a href="msushi.pdf" target="_blank" class="menu-button">View PDF</a>
-    </div>
-
-    <div class="menu-card">
-      <div class="menu-title">🍰 Dessert Menu</div>
-      <a href="mdessert.pdf" target="_blank" class="menu-button">View PDF</a>
-    </div>
-
-    <div class="menu-card">
-      <div class="menu-title">🍳 Breakfast Menu</div>
-      <a href="mbreakfast.pdf" target="_blank" class="menu-button">View PDF</a>
-    </div>
-
+  <div class="section">
+    <h2>📘 All Menu</h2>
+    <iframe src="allmenu.pdf"></iframe>
   </div>
 
-  <!-- زر واتساب -->
-  <a href="https://wa.me/201234567890" class="whatsapp-button" target="_blank">
-    💬 WhatsApp Order
-  </a>
+  <div class="section">
+    <h2>🥤 Drinks</h2>
+    <iframe src="drinks.pdf"></iframe>
+  </div>
 
+  <div class="section">
+    <h2>🍰 Desserts</h2>
+    <iframe src="desserts.pdf"></iframe>
+  </div>
+
+  <div class="section">
+    <h2>🍽️ Food</h2>
+    <iframe src="food.pdf"></iframe>
+  </div>
+
+  <div class="section">
+    <h2>🍕 Pizza</h2>
+    <iframe src="pizza.pdf"></iframe>
+  </div>
+
+  <a class="whatsapp" href="https://wa.me/201234567890" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    Order Now
+  </a>
 </body>
 </html>
