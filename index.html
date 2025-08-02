@@ -3,68 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marley's Premium Lounge Menu</title>
+  <title>Marley's Premium Lounge</title>
   <style>
+    :root {
+      --green: #0f1f0f;
+      --gold: #ffd700;
+      --accent: #27ae60;
+      --text-light: #ffffff;
+      --section-bg: #1a2e1a;
+    }
+
     body {
       margin: 0;
-      background-color: #0f1f0f;
-      color: #fff;
+      background-color: var(--green);
+      color: var(--text-light);
       font-family: 'Segoe UI', sans-serif;
     }
+
     header {
       text-align: center;
-      padding: 20px;
-      background-color: #1a2e1a;
+      padding: 30px 20px 10px;
+      background-color: var(--section-bg);
       box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
+
     header img {
       max-height: 100px;
     }
+
     h1 {
-      margin: 10px 0 0 0;
-      color: gold;
+      color: var(--gold);
+      margin-top: 10px;
+      font-size: 28px;
     }
-    section {
-      padding: 20px;
+
+    nav {
+      background-color: var(--green);
       text-align: center;
+      padding: 10px 0;
     }
+
+    nav a {
+      color: var(--gold);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
     section h2 {
-      color: #ffd700;
-      margin-bottom: 15px;
+      color: var(--gold);
+      margin-bottom: 20px;
+      font-size: 24px;
     }
+
     .menu-button {
       display: inline-block;
       margin: 10px;
       padding: 15px 25px;
-      background-color: #27ae60;
+      background-color: var(--accent);
       color: white;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       font-size: 18px;
       text-decoration: none;
-      box-shadow: 0 0 10px #27ae60;
-      transition: background-color 0.3s;
+      box-shadow: 0 0 10px var(--accent);
+      transition: 0.3s;
     }
+
     .menu-button:hover {
-      background-color: #219150;
+      background-color: #1f8a4c;
     }
+
     .whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
       background-color: #25d366;
       color: white;
-      padding: 15px 20px;
+      padding: 12px 18px;
       border-radius: 50px;
-      font-size: 18px;
+      font-size: 16px;
       text-decoration: none;
-      box-shadow: 0 0 15px #25d366;
       display: flex;
       align-items: center;
+      box-shadow: 0 0 15px #25d366;
       gap: 10px;
     }
+
     .whatsapp img {
-      height: 24px;
+      height: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 { font-size: 22px; }
+      nav a { display: block; margin: 8px 0; }
+      .menu-button { width: 80%; font-size: 16px; }
     }
   </style>
 </head>
@@ -74,27 +114,35 @@
     <h1>Marley's Premium Lounge</h1>
   </header>
 
-  <section>
-    <h2>📋 All Menu</h2>
+  <nav>
+    <a href="#all">All Menu</a>
+    <a href="#drinks">Drinks</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#food">Food</a>
+    <a href="#pizza">Pizza</a>
+  </nav>
+
+  <section id="all">
+    <h2>📋 Full Menu</h2>
     <a href="mdrinks.pdf" class="menu-button" target="_blank">View All Menu</a>
   </section>
 
-  <section>
+  <section id="drinks">
     <h2>🥤 Drinks</h2>
     <a href="mdrinks.pdf" class="menu-button" target="_blank">View Drinks</a>
   </section>
 
-  <section>
+  <section id="desserts">
     <h2>🍰 Desserts</h2>
     <a href="mdessert.pdf" class="menu-button" target="_blank">View Desserts</a>
   </section>
 
-  <section>
+  <section id="food">
     <h2>🍽️ Food</h2>
     <a href="mfood.pdf" class="menu-button" target="_blank">View Food</a>
   </section>
 
-  <section>
+  <section id="pizza">
     <h2>🍕 Pizza</h2>
     <a href="mpizza.pdf" class="menu-button" target="_blank">View Pizza</a>
   </section>
